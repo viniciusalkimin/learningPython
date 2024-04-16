@@ -5,10 +5,10 @@ def isPrimo(num: int):
     for n in range(1,num+1):
         if num%n==0:
             count+=1
-    if count > 2:
-        return False
-    else:
+    if count is 2:
         return True
+    else:
+        return False
     
 def isPrimo1(num: int):
     if num <=1:
@@ -18,6 +18,6 @@ def isPrimo1(num: int):
             return False
     return True
 
-number = 3
+number = 9
 print(isPrimo(number))
 print(isPrimo1(number))
