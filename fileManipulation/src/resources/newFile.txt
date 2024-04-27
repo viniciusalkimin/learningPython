@@ -1,0 +1,2 @@
+New file using command with
+Append of new line
