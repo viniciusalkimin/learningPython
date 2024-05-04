@@ -1,7 +1,7 @@
 from socket import *
 
-server="127.0.0.1"
-port="43210"
+server = '127.0.0.1'
+port = 43210
 
 msg=bytes(input("Type anything: "), 'utf-8')
 obj_socket = socket(AF_INET, SOCK_STREAM)
