@@ -1,27 +1,27 @@
-def major_func(arr, num):
+def major_func(array, num):
     majors = []
-    for i in range(1, len(arr)):
-        if arr[i] > num:
-            majors.append(arr[i])
+    for i in range(1, len(array)):
+        if array[i] > num:
+            majors.append(array[i])
     return majors
 
 
-def minor_func(arr, num):
+def minor_func(array, num):
     minors = []
-    for i in range(1, len(arr)):
-        if arr[i] < num:
-            minors.append(arr[i])
+    for i in range(1, len(array)):
+        if array[i] < num:
+            minors.append(array[i])
     return minors
 
 
-def quick_sort(arr):
-    if len(arr) <= 1:
-        return arr
-    pivot = arr[0]
-    minors = minor_func(arr, pivot)
-    majors = major_func(arr, pivot)
+def quick_sort(array):
+    if len(array) <= 1:
+        return array
+    pivot = array[0]
+    minors = minor_func(array, pivot)
+    majors = major_func(array, pivot)
     return quick_sort(minors) + [pivot] + quick_sort(majors)
 
 
-a = [5, 4, 2, 1, 7, 8]
-print(quick_sort(a))
+arr = [7, 9, 3, 2, 4]
+print(quick_sort(arr))
